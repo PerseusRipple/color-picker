@@ -95,7 +95,9 @@ class App extends Component {
           </button>
         </section>
         <section className="list_container">
-          Favorite Colors
+          <h2 className="favorites">
+            <em>Favorite Colors:</em>
+          </h2>
           <ul>
             {this.state.colors.map(color => {
               return <li>{color}</li>;

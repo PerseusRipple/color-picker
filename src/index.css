@@ -85,5 +85,19 @@ h1 {
 }
 
 .list_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
   margin: 2rem;
+  border: 0.5rem solid black;
+  height: 100%;
+}
+
+.favorites {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
 }
