@@ -11,12 +11,79 @@ body {
   min-height: 100%;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  margin-top: 1.5rem;
+}
+
 .color {
   margin: 0.5rem;
+  padding: 0.33rem;
 }
 
 .slider {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgb(167, 151, 151);
   margin: 0.5rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  height: 15rem;
+}
+
+.hue {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+}
+
+.saturation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+}
+
+.lightness {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+}
+
+.button_box {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  background-color: rgb(13, 13, 243);
+  border-radius: 7%;
+  margin: 1rem;
+  width: 7rem;
+  height: 2rem;
+}
+
+.list_container {
+  margin: 2rem;
 }

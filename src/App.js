@@ -42,7 +42,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>Color Picker</h1>
+        <h1>Random Rainbow</h1>
         <section
           className="color"
           style={{
@@ -56,8 +56,7 @@ class App extends Component {
 
         <section className="slider">
           <section className="hue">
-            Hue
-            {""}
+            <p>Hue</p>
             <input
               type="range"
               className="hue"
@@ -68,9 +67,9 @@ class App extends Component {
             />
           </section>
 
-          <section className="Saturation">
-            Saturation
-            {""}
+          <section className="saturation">
+            <p>Saturation</p>
+
             <input
               type="range"
               className="saturation"
@@ -79,9 +78,9 @@ class App extends Component {
             />
           </section>
 
-          <section className="Lightness">
-            Lightness
-            {""}
+          <section className="lightness">
+            <p>Lightness</p>
+
             <input
               type="range"
               className="lightness"
@@ -90,9 +89,13 @@ class App extends Component {
             />
           </section>
         </section>
-        <button onClick={this.addColorToList}>Remember!</button>
+        <section className="button_box">
+          <button className="button" onClick={this.addColorToList}>
+            Remember Me!
+          </button>
+        </section>
         <section className="list_container">
-          My Favorites
+          Favorite Colors
           <ul>
             {this.state.colors.map(color => {
               return <li>{color}</li>;
