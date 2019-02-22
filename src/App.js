@@ -42,7 +42,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>My Color Picker</h1>
+        <h1>Color Picker</h1>
         <section
           className="color"
           style={{
@@ -57,6 +57,7 @@ class App extends Component {
         <section className="slider">
           <section className="hue">
             Hue
+            {""}
             <input
               type="range"
               className="hue"
@@ -69,6 +70,7 @@ class App extends Component {
 
           <section className="Saturation">
             Saturation
+            {""}
             <input
               type="range"
               className="saturation"
@@ -79,6 +81,7 @@ class App extends Component {
 
           <section className="Lightness">
             Lightness
+            {""}
             <input
               type="range"
               className="lightness"
