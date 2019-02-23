@@ -42,7 +42,9 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>Random Rainbow</h1>
+        <header>
+          <h1>Random Rainbow</h1>{" "}
+        </header>
         <section
           className="color"
           style={{
@@ -94,10 +96,10 @@ class App extends Component {
             Remember Me!
           </button>
         </section>
+        <h2 className="favorites">
+          <em>Keepers:</em>
+        </h2>
         <section className="list_container">
-          <h2 className="favorites">
-            <em>Favorite Colors:</em>
-          </h2>
           <ul>
             {this.state.colors.map(color => {
               return <li>{color}</li>;
