@@ -17,6 +17,15 @@ class App extends Component {
       )
     });
   };
+  /*
+   removeColorFromList = () => {
+    this.setState({
+removeChild(this.previousElementSibling);
+    removeChild(this);
+    })
+    
+    };
+} */
 
   updateHue = event => {
     console.log(event.target.value);
@@ -92,19 +101,34 @@ class App extends Component {
           </section>
         </section>
         <section className="button_box">
-          <button className="button" onClick={this.addColorToList}>
+          <button className="remember" onClick={this.addColorToList}>
             Remember Me!
+          </button>
+          <button className="remove" onClick={this.removeColorFromList}>
+            Remove Me!
           </button>
         </section>
         <h2 className="favorites">
           <em>Keepers:</em>
         </h2>
         <section className="list_container">
-          <ul>
+          <h1>
             {this.state.colors.map(color => {
-              return <li>{color}</li>;
+              return (
+                <p
+                  className="patch"
+                  color
+                  style={{
+                    backgroundColor: `hsl(${this.state.hue},${
+                      this.state.saturation
+                    }%,${this.state.lightness}%)`
+                  }}
+                >
+                  {color}
+                </p>
+              );
             })}
-          </ul>
+          </h1>
         </section>
       </>
     );
