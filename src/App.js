@@ -85,6 +85,8 @@ removeChild(this.previousElementSibling);
               type="range"
               className="saturation"
               name="saturation"
+              min="0"
+              max="100"
               onChange={this.updateSaturation}
             />
           </section>
@@ -96,6 +98,8 @@ removeChild(this.previousElementSibling);
               type="range"
               className="lightness"
               name="lightness"
+              min="0"
+              max="100"
               onChange={this.updateLightness}
             />
           </section>
