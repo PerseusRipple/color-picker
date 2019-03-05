@@ -32,6 +32,8 @@ removeChild(this.previousElementSibling);
     this.setState({
       hue: event.target.value
     });
+
+    console.log("THISSSSS" + this.state.colors);
   };
 
   updateSaturation = event => {
@@ -108,6 +110,7 @@ removeChild(this.previousElementSibling);
           <button className="remember" onClick={this.addColorToList}>
             Remember Me!
           </button>
+
           <button className="remove" onClick={this.removeColorFromList}>
             Remove Me!
           </button>
@@ -140,8 +143,3 @@ removeChild(this.previousElementSibling);
 }
 
 export default App;
-/*
-//<ul>
- {this.state.colors.map(color => {
-  return <li>{color}</li> </ul>;}
-}) */
